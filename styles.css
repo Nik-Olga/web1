@@ -1,0 +1,816 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+
+  font-family: "Wardrum Bold";
+
+  src: local("Wardrum Bold");
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+header
+    {display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Wardrum Bold", sans-serif;
+    height: 7vw;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: #1A2A27;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1485px;
+    z-index: 1000;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 5vw;
+    height: auto;
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10%;
+    width: 88%;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    width: 60%;
+    display: flex;
+
+}
+
+nav ul li a {
+    font-size: 1.3vw;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    white-space: nowrap;
+}
+
+nav ul li:nth-child(1) a,
+nav ul li:nth-child(3) a,
+nav ul li:nth-child(5) a {
+    color: #D19A24;
+}
+
+nav ul li:nth-child(1) a,
+nav ul li:nth-child(2) a,
+nav ul li:nth-child(3) a,
+nav ul li:nth-child(4) a {
+    position: relative;
+    top: 35%;
+}
+
+
+nav ul li:nth-child(5) a {
+    padding: 1.3vw  1.3vw;
+    border: 0.3vw solid #D19A24;
+    color: #D19A24;
+    text-decoration: none;
+
+}
+
+
+body {
+    margin-top: 7vw;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: #1A2A27;
+    font-family: "Wardrum Bold", sans-serif;
+}
+
+.banner {
+  width: 100%;
+  background-image: url(images/bannerimage.png);
+  height: 50vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+.title {
+    position: absolute;
+    color: white;
+    font-size: 2.5vw;;
+    font-weight: normal;
+    text-align: center;
+    top:20vw;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 15%;
+}
+
+.viewmenu
+{
+    position:absolute;
+    color: white;
+    font-size: 1.2vw;
+    text-align: center;
+    top:28vw;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #D19A24;
+    padding: 1.3vw  1.3vw;
+    border: none;
+    font-family: "Wardrum Bold", sans-serif;
+    font-weight: lighter;
+
+}
+
+
+.text {
+    color: #D19A24;
+    font-size: 1.5vw;
+    font-weight: normal;
+    white-space: nowrap;
+    letter-spacing: 1.2vw;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+.dishes {
+  background-image: url("images/gradient.png");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 6vw;
+  padding-right:6vw; 
+  padding-top: 8vw;
+  margin-top: -8vw;
+}
+
+.title2{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.line-left, .line-right {
+  height: 0.3vw;
+  background-color: #D19A24;
+  border: none;
+}
+
+.line-left {
+  width: 45%;
+  margin-right: 1.2vw;
+}
+
+.line-right {
+  width: 8%;
+}
+
+.mealsuggestions{
+    margin-top: 3.5vw;
+    margin-bottom: 3.5vw;
+    width: 100%;
+    height: 30vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dish {
+    border: 0.3vw solid #D19A24;
+    width: 22%;
+    height: 100%;
+    
+}
+
+.dish {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dish:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(180deg, #D19A24, transparent);
+}
+
+
+.dish img{
+    width: 80%;
+    height: auto;
+    margin: 10%;
+    margin-bottom: 0;
+}
+
+.dishname {
+    font-size: 1vw;
+    color:white;
+    text-align: center;
+}
+
+.dishdescription {
+    font-size: 0.7vw;
+    color:white;
+    text-align: center;
+    font-weight: lighter;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    line-height: 1.5;
+    letter-spacing: 0.2vw;
+
+}
+
+.dishpriсe {
+    font-size: 1.2vw;
+    color:#D19A24;
+    text-align: center;
+}
+
+.viewfullmenu{
+    width: 100%;
+    background-color: transparent;
+    margin-top:2vw;
+    border: 0.3vw solid #D19A24;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Wardrum Bold", sans-serif;
+    font-size: 1.6vw;
+    color:white;
+    gap: 1vw;
+}
+
+.viewfullmenu img {
+    width: 7%;
+    height: auto;
+}
+
+.whatourguestssay{
+  padding-left: 6vw;
+  padding-right:6vw;
+  height: auto;
+  margin-top: 2vw;
+  padding-top: 8vw;
+}
+
+.line-rightnew{
+  width: 40%;
+  height: 0.3vw;
+  background-color: #D19A24;
+  border: none;
+}
+
+.review {
+    margin-top: 3.5vw;
+    width: 80%;
+    height: 10vw;
+    background-color:#D19A24;
+    margin-bottom: 2vw;
+    margin-left: 10%;
+    display: flex;
+    padding: 1.5%;
+    align-items: center;
+}
+
+.review img {
+    height: 80%;
+    width: auto;
+    margin-right: 1.5%;
+
+}
+
+.filling{
+    width: 88%;
+}
+
+.top {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1%;
+
+}
+
+.stars{
+    width:45%;
+    white-space: nowrap;
+}
+
+.stars img{
+    width: 15%;
+    height: auto;
+}
+
+.from {
+    color:white;
+    font-size: 0.9vw;
+    white-space: nowrap;
+}
+
+
+.reviewtext{
+    color:#1A2A27;
+    font-size: 1vw;
+    text-align: left;
+    line-height: 1.5;
+    word-spacing: 0.5vw;
+}
+
+.bottom{
+    display: flex;
+    align-items: center;
+    gap:5%;
+    margin-left: 70%;
+}
+
+.bottom img{
+    width: 15%;
+}
+
+.line-leftnew{
+    width: 70%;
+    margin-right: 1.2vw;
+    height: 0.3vw;
+    background-color: #D19A24;
+    border: none;
+}
+.about {
+    margin-top: 10vw;
+}
+.aboutfilling {
+    margin-top: 3.5vw;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+.aboutfilling img {
+    width: auto;
+    height: 28.5vw;
+}
+
+.abouttext{
+    color:white;
+    line-height: 2.15;
+    letter-spacing: 0.1vw;
+    word-spacing: 1vw;
+    font-size:1.3vw;
+    width: 49vw;
+    
+    color: white;
+}
+
+
+
+footer {
+    margin-top: 10vw;
+    height: 23vw;
+    width: 90%;
+    background-color: #D19A24;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-media {
+    width: 15%;
+}
+
+.logo-media img{
+    height: auto;
+    width: 100%;
+}
+
+.social-media {
+    margin-top: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-media img {
+    width: 20%;
+}
+.footertitle {
+    letter-spacing: 0.9vw;
+    color: #1A2A27;
+    white-space: nowrap;
+    font-size: 1.2vw;
+}
+.contact {
+    display: flex;
+    align-items: center;
+    gap:5%;
+    color: #1A2A27;
+    white-space: nowrap;
+    word-spacing: 0.5vw;
+    font-size: 1vw;
+}
+
+.contact img {
+    height: auto;
+    width: 10%;
+}
+
+.working-hours{
+    width: 25%;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1vw;
+}
+.days-of-the-week {
+    color:white;
+    line-height: 1.2;
+    text-align: left;
+}
+
+.hours{
+    color:white;
+    line-height: 1.2;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.menu-btn{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right:0;
+  width: 4vw;
+  height: 4vw;
+  cursor: pointer;
+  z-index: 1;
+}
+ 
+.menu-btn > span,
+.menu-btn > span::before,
+.menu-btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.3vw;
+  background-color: white;
+  transition-duration: .25s;
+}
+.menu-btn > span::before {
+  content: '';
+  top: -1.3vw;
+}
+.menu-btn > span::after {
+  content: '';
+  top: 1.3vw;
+}
+ 
+.menubox {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 60vw;
+    height: 100%;
+    margin: 0;
+    padding: 10vw 0;
+    list-style: none;
+    background-color: #D19A24;
+    transition-duration: .25s;
+}
+
+.menu-item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4vw 4vw;
+}
+
+.menu-item {
+    color: #1A2A27;
+    font-family: "Wardrum Bold", sans-serif;
+    font-size: 3vw;
+    text-decoration: none;
+    transition-duration: .25s;
+    width: 90%;
+    height: 100%;
+}
+
+.menu-item-container:hover {
+    background-color: #1A2A27;
+}
+
+.menu-item:hover{
+    color:#D19A24;
+}
+
+.line {
+    width: 90%;
+    height: 0.3vw;
+    background-color: #1A2A27;
+    border: none;
+    margin-left: 0;
+    margin-top: 0.5vw;
+}
+ 
+#menu-toggle{
+  opacity: 0;
+}
+ 
+#menu-toggle:checked ~ .menu-btn > span{
+  transform: rotate(45deg);
+}
+#menu-toggle:checked ~ .menu-btn > span::before{
+  top: 0;
+  transform: rotate(0);
+}
+#menu-toggle:checked ~ .menu-btn > span::after{
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu-toggle:checked ~ .menubox{
+  visibility: visible;
+  left: 0;
+}
+
+.form{
+    margin-top: 2vw;
+    padding-top: 8vw;
+    position: relative;
+}
+
+.form video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+form {
+    width: 100%;
+    max-width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #D19A24;
+    box-shadow: 0 0.3vw 0.6vw rgba(0, 0, 0, 0.3);
+    z-index: 1;
+
+}
+
+fieldset{
+    border: 0.3vw solid #1A2A27;
+}
+
+legend {
+    font-size: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    color: #1A2A27;
+
+}
+
+
+label {
+    display: block;
+    font-size: 1.3vw;
+    margin-top: 2vw;
+    color: #1A2A27;
+}
+
+input::placeholder {
+    color: #6B8782;
+    font-size: 0.8vw;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.6vw;
+    margin-top: 0.4vw;
+    color: #1A2A27;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 0.9vw;
+    font-family: "Wardrum Bold", sans-serif;
+}
+
+
+input:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: #1A2A27;
+    box-shadow: 0 0 0.4vw #1A2A27;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.book  {
+    width: 100%;
+    padding: 0.8vw;
+    margin-top: 1vw;
+    background-color: #1A2A27;
+    color: #D19A24;
+    font-size: 1.5vw;
+    font-family: "Wardrum Bold", sans-serif;
+    border: 0.3vw solid #1A2A27;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book:hover {
+    background-color: #D19A24;
+    color: #1A2A27;
+    transform: translateY(-2px);
+}
+
+
+@media (max-width: 768px) {
+
+    header{
+        height: 10vw;
+    }
+    nav ul li:not(:nth-child(5)) {
+        display: none;
+    }
+
+    nav ul li:nth-child(5) a {
+        margin-left: 35vw;
+        font-size: 1.7vw;
+    }
+
+    .burger-menu {
+        display: block;
+        margin-left: 94vw;
+        position: absolute;
+    }
+
+    .burger-menu img {
+        width: 3vw;
+        height: 3vw;
+    }
+    .viewmenu {
+    font-size: 1.7vw;
+    text-align: center;
+    top:30vw;
+    padding: 1.9vw  1.9vw;
+    }
+
+    .mealsuggestions{
+    width: 100%;
+    height: 80vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.dishes{
+  padding-top: 10vw;
+  margin-top: -10vw;
+}
+
+.dish {
+    border: 0.3vw solid #D19A24;
+    width: 96%;
+    height: 21%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vw;
+    padding: 2%;
+    
+}
+
+.dish img {
+    width: auto;
+    height: 90%;
+    margin: 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+}
+
+.dishname {
+    font-size: 1.8vw;
+    color: white;
+    text-align: left;
+}
+
+.dishdescription {
+    font-size: 1.3vw;
+    color: white;
+    text-align: left;
+    font-weight: lighter;
+    width: 100%;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0.1vw;
+}
+
+.dishpriсe {
+    font-size: 2vw;
+    color: #D19A24;
+    text-align: left;
+}
+
+.whatourguestssay{
+    padding-top: 10vw;
+}
+
+.review {
+    width: 100%;
+    margin-left: 0;
+    height: 12vw;
+    padding: ;
+}
+
+.reviewtext{
+    font-size: 1.5vw;
+    line-height: 1;
+}
+
+.bottom{
+    margin-left: 80%;
+    display: flex;
+    align-items: center;
+    gap:5%;
+}
+
+.from {
+    font-size: 1.2vw;
+}
+
+
+footer {
+    flex-direction: column;
+    height: auto;
+    gap:5vw;
+    align-items: center;
+}
+
+.logo-media {
+    margin-top: 5vw;
+}
+
+.footertitle{
+    font-size: 2vw;
+}
+
+.contact{
+    font-size: 1.2vw;
+}
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.working-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5vw;
+}
+
+form{
+
+}
+}

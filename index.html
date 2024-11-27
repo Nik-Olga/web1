@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Restaurant offering delicious Mediterranean cuisine.">
+	<link rel="stylesheet" href="styles.css">
+	<title>Solea</title>
+</head>
+
+<header>
+		<div class = "logo">
+			<img src="images/logo.jpg">
+		</div>
+
+		<nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About &nbsp;Us</a></li>
+                <li><a href="#review">Reviews</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#booktable">Book Table</a></li>
+            </ul>
+        </nav>
+        
+        <div class="burger-menu">
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-btn" for="menu-toggle">
+              <span></span>
+            </label>
+
+            <ul class="menubox">
+              <li>
+                 <div class="menu-item-container">
+                     <a class="menu-item" href="#">Home</a>
+                     <hr class="line">
+                 </div>
+              </li>
+
+              <li>
+                 <div class="menu-item-container">
+                     <a class="menu-item" href="#about">About us</a>
+                     <hr class="line">
+                 </div>
+              </li>
+
+              <li>
+                 <div class="menu-item-container">
+                     <a class="menu-item" href="#review">Reviews</a>
+                     <hr class="line">
+                 </div>
+              </li>
+    
+              <li>
+                 <div class="menu-item-container">
+                     <a class="menu-item" href="#menu">Menu</a>
+                     <hr class="line">
+                 </div>
+              </li>
+    
+              <li>
+                 <div class="menu-item-container">
+                     <a class="menu-item" href="#">Book Table</a>
+                     <hr class="line">
+                 </div>
+              </li>
+           </ul>
+       </div>
+</header>
+<body>
+	<section class = "banner">
+
+		
+
+		<h1 class="title">The &nbsp;Taste &nbsp;of &nbsp;the<br>Mediterranean &nbsp;in &nbsp;Every &nbsp;Dish</h1>
+
+		<button class="viewmenu">view menu</button>
+	</section>
+
+    <section class="dishes" id="menu">
+        <div class="title2">
+    		<hr class="line-left">
+    		<h2 class ="text">our special dishes</h2>
+    		<hr class="line-right">
+    	</div>
+    	<div class="mealsuggestions">
+    		<div class="dish">
+    			<img src="images/grilledseabass.png">
+                <div class="description">
+    			   <p class="dishname">grilled sea bass</p>
+    			   <p class="dishdescription">Freshly  caught  sea  bass, grilled  to  perfection, with herbs  and  lemon dressing</p>
+    			   <p class="dishpriсe">450 uan</p>
+                </div>
+    		</div>
+
+            <div class="dish">
+                <img src="images/lambmoussaka.png">
+                <div class="description">
+                  <p class="dishname">lamb moussaka</p>
+                  <p class="dishdescription">layers of tender lamb, eggplant, and creamy béchamel, baked to perfection</p>
+                  <p class="dishpriсe">350 uan</p>
+                </div>
+            </div>
+
+    		<div class="dish">
+    			<img src="images/baklava.png">
+                <div class="description">
+    			  <p class="dishname">baklava</p>
+    			  <p class="dishdescription">delightful  dessert  of  thin  layers  of  filo, filled  with  crushed nuts  and  honey</p>
+    			  <p class="dishpriсe">120 uan</p>
+                </div>
+    		</div>
+    	</div>
+
+    	<button class="viewfullmenu">view full menu <img src="icons/arrow.png"></button>
+    </section>
+
+    <section class="whatourguestssay" id="review">
+    	<div class="title2">
+    		<hr class="line-right">
+    		<h2 class ="text">&nbsp;what our guests say</h2>
+    		<hr class="line-rightnew">
+    	</div>
+
+    	<div class="review">
+    		<img src="images/review1.png">
+    	    <div class="filling">	
+    		    <div class="top">
+    			     <div class="stars">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		         </div>
+    		         <p class="from">from: Serena R.</p>
+    	        </div>	
+
+    	        <p class="reviewtext">The   best   Mediterranean   food   I’ve   ever   had!   The octopus   was   a   masterpiece!</p>
+
+    	        <div class="bottom">
+    	    	  <img src="icons/calendar.png">
+    	    	  <p class="from">03/05/2024</p>
+    	        </div>
+    	    </div>
+    	</div>
+
+    	<div class="review">
+    		<img src="images/review2.png">
+
+    	    <div class="filling">	
+    		    <div class="top">
+    			    <div class="stars">
+    		          <img src="icons/star.png">
+    		          <img src="icons/star.png">
+    		          <img src="icons/star.png">
+    		          <img src="icons/star.png">
+    		          <img src="icons/star.png">
+    		        </div>
+    		        <p class="from">from: Daniel W.</p>
+    		    </div>
+
+    		    <p class="reviewtext">Loved   every   bite!   The   falafel   was   crispy   on   the   outside,   tender   on   the   inside</p>
+
+    		    <div class="bottom">
+    			 <img src="icons/calendar.png">
+    			 <p class="from">23/08/2024</p>
+    		   </div>	
+    	   </div>
+    	</div>
+
+    	<div class="review">
+    		 <img src="images/review3.png">
+
+    	     <div class="filling">	
+    		     <div class="top">
+    			     <div class="stars">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		             <img src="icons/star.png">
+    		         </div>
+    		        <p class="from">from: Daryna I.</p>
+    	         </div>
+
+    	         <p class="reviewtext">A   wonderful experience.   The   lamb   chops   were   perfect!</p>
+
+    	         <div class="bottom">
+    	    	     <img src="icons/calendar.png">
+    	    	     <p class="from">18/09/2024</p>
+    	         </div>
+    	    </div>
+    	</div>
+    </section>
+
+    <section class="whatourguestssay" id="about">
+    	<div class="title2">
+    		 <hr class="line-leftnew">
+    		 <h2 class ="text">about us</h2>
+    		 <hr class="line-right">
+    	</div>
+
+        <div class="aboutfilling">
+    	 <p class="abouttext">At  Solea  Cuisine,  we  bring  the  rich  flavors and traditions of the Mediterranean right to your table. Our chefs craft each dish with the freshest ingredients, inspired by the timeless culinary heritage of the region. Whether you're savoring a classic seafood dish or enjoying a modern twist on Mediterranean cuisine, our goal is to create an unforgettable dining experience that celebrates both tradition and innovation.</p>
+         <img src="images/food.jpg">
+        </div>
+    </section>
+
+    <section class = "form" id="booktable">
+        <video autoplay muted loop>
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+    <form method="post">
+    <fieldset>
+        <legend>Book Table</legend>
+
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+
+        <label for="guests">Number of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" max="20" value="1" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <select id="time" name="time" required>
+            <option value="09:00">09:00</option>
+            <option value="09:30">09:30</option>
+            <option value="10:00">10:00</option>
+            <option value="10:30">10:30</option>
+            <option value="11:00">11:00</option>
+            <option value="11:30">11:30</option>
+            <option value="12:00">12:00</option>
+            <option value="12:30">12:30</option>
+            <option value="13:00">13:00</option>
+            <option value="13:30">13:30</option>
+            <option value="14:00">14:00</option>
+            <option value="14:30">14:30</option>
+            <option value="15:00">15:00</option>
+            <option value="15:30">15:30</option>
+            <option value="16:00">16:00</option>
+            <option value="16:30">16:30</option>
+            <option value="17:00">17:00</option>
+            <option value="17:30">17:30</option>
+            <option value="18:00">18:00</option>
+            <option value="18:30">18:30</option>
+            <option value="19:00">19:00</option>
+            <option value="19:30">19:30</option>
+            <option value="20:00">20:00</option>
+            <option value="20:30">20:30</option>
+            <option value="21:00">21:00</option>
+        </select>
+
+        <label for="requests">Special Requests (Optional):</label>
+        <textarea id="requests" name="requests" rows="4" placeholder="Enter any special requests here"></textarea>
+
+        <button class="book" type="submit">book table now!</button>
+    </fieldset>
+</form>
+</section>
+
+    <footer>
+      <div class="logo-media">
+   	     <img src="images/logo.jpg">
+   	     <div class="social-media">
+   		   <img src="icons/telegram.png">
+   		   <img src="icons/instagram.png">
+   		   <img src="icons/facebook.png">
+   	     </div>
+       </div>
+
+      <div class="contact-us">
+   	     <h3 class="footertitle">contact us</h3>
+   	     <div class="contact">
+   	         <img src="icons/number.png"> 
+   	         <p>+380 xxxxxxxxx</p> 
+   	     </div>
+   	     <div class="contact">
+   	         <img src="icons/e-mail.png"> 
+   	         <p>xxxxxxxxx@gmail.com</p> 
+   	     </div>
+   	     <div class="contact">
+   	         <img src="icons/location.png"><p>123 Mediterranean Street, Lviv</p>
+   	     </div>
+      </div>
+
+      <div class="working-hours">
+   	     <h3 class="footertitle">working hours</h3>
+   	     <div class="info">
+   		     <div class="days-of-the-week">
+   		     	<p>monday</p>
+   		     	<p>tuesday</p>
+   		     	<p>wednesday</p>
+   		     	<p>thursday</p>
+   		     	<p>friday</p>
+   		     	<p>saturday</p>
+   		     	<p>sunday</p>
+   		     </div>
+   	         <div class="hours">
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         	<p>9:00am - 10:00pm</p>
+   	         </div>
+         </div>
+      </div>
+    </footer>
+</body>
+</html>
